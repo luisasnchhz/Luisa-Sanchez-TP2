@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100..900&family=Poppins:wght@100..900&display=swap');
+
+* { box-sizing: border-box;}
+
+body {font-family: 'Poppins', sans-serif;
+    margin:0;
+
+} 
+
+nav, header, main {
+    width: 100vw;
+    padding:0 8.33vw;
+}
+
+section { width: 100%;}
+
+header { height: 62vh; 
+    text-align: center;
+}
+
+.mostrar { 
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: black;
+    width: 100vw;
+    padding: 2vw;
+}
+
+nav { 
+    background-color: rgb(140, 10, 10);
+    height: 19vh;
+    padding:0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+nav div {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav a, nav h1, header h3, header h1 {
+    line-height: 125%;
+    vertical-align: top;
+
+}
+
+header h3 { 
+    color: rgb(128, 124, 124);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+main section div {
+    width: 45.83%;
+}
+
+section div img, video {
+    width: 100%;
+}
+
+main section {
+justify-content: space-between;
+display: flex;
+
+}
+
+
+nav a, header a { 
+color: white; 
+}
+
+nav h1 { 
+    font-weight: 500;
+    margin:0;
+    font-size: 40px;
+    color: rgb(12, 8, 8);
+
+} 
+
+nav h1:hover { 
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    margin:0;
+    font-size: 40px;
+    transition: all 2000ms;
+
+} 
+
+header h1 { 
+    font-family: 'Fira Sans', sans-serif; }
+
+a { text-decoration: none;}
+
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+
+header a {
+    background-color: grey;
+    padding: 1px;
+    width: 200px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    }
+    nav span { display:nones ;}
+
+nav span {
+        display: none;
+    }
+
+.icon-menu { color: white;
+    font-size: 30px;
+
+}
+
+.icon-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    
+}
+
+footer { 
+
+    background-color: rgb(140, 10, 10);
+  width: 100%;
+  height: 123px;
+  margin-top: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+/* aca inician los media*/
+
+@media(max-width:992px){
+   
+    nav div { width: 40% ;}
+}
+
+
+@media (max-width: 768px){
+
+    nav div { display: none;}
+    nav span {display: inline ;}
+
+}
